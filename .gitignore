@@ -1,5 +1,17 @@
 node_modules
 
-*.map
+/build
+/dist
+.next
 
-packages/functions/next/
+.DS_Store
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+packages/functions/next
+package-lock.json
+.firebase
+
+.cache/
