@@ -1,28 +1,29 @@
-import React from 'react';
-import Head from 'next/head';
-import { ThemeProvider } from 'styled-components';
-import Sticky from 'react-stickynode';
-import { hostingTheme } from 'common/src/theme/hosting';
+import React from "react";
+import Head from "next/head";
+import { ThemeProvider } from "styled-components";
+import Sticky from "react-stickynode";
+import { hostingTheme } from "common/src/theme/hosting";
 import {
   GlobalStyle,
-  ContentWrapper,
-} from 'common/src/containers/Hosting/hosting.style';
-import { ResetCSS } from 'common/src/assets/css/style';
-import Navbar from 'common/src/containers/Hosting/Navbar';
-import FeatureSection from 'common/src/containers/Hosting/Features';
-import InfoSection from 'common/src/containers/Hosting/Info';
-import DomainSection from 'common/src/containers/Hosting/Domain';
-import PaymentSection from 'common/src/containers/Hosting/Payment';
-import GuaranteeSection from 'common/src/containers/Hosting/Guarantee';
-import FaqSection from 'common/src/containers/Hosting/Faq';
-import ServicesSection from 'common/src/containers/Hosting/Services';
-import BannerSection from 'common/src/containers/Hosting/Banner';
-import PricingSection from 'common/src/containers/Hosting/Pricing';
-import TestimonialSection from 'common/src/containers/Hosting/Testimonials';
-import ContactSection from 'common/src/containers/Hosting/Contact';
-import Footer from 'common/src/containers/Hosting/Footer';
-import { DrawerProvider } from 'common/src/contexts/DrawerContext';
-import { ParallaxProvider } from 'react-scroll-parallax';
+  ContentWrapper
+} from "common/src/containers/Hosting/hosting.style";
+import { ResetCSS } from "common/src/assets/css/style";
+import Navbar from "common/src/containers/Hosting/Navbar";
+// import FeatureSection from "common/src/containers/Hosting/Features";
+import InfoSection from "common/src/containers/Hosting/Info";
+import DomainSection from "common/src/containers/Hosting/Domain";
+// import PaymentSection from "common/src/containers/Hosting/Payment";
+// import GuaranteeSection from "common/src/containers/Hosting/Guarantee";
+// import FaqSection from "common/src/containers/Hosting/Faq";
+// import ServicesSection from "common/src/containers/Hosting/Services";
+import BannerSection from "common/src/containers/Hosting/Banner";
+// import PricingSection from "common/src/containers/Hosting/Pricing";
+import TestimonialSection from "common/src/containers/Hosting/Testimonials";
+import TeamSection from "common/src/containers/Hosting/TeamSection";
+import ContactSection from "common/src/containers/Hosting/Contact";
+import Footer from "common/src/containers/Hosting/Footer";
+import { DrawerProvider } from "common/src/contexts/DrawerContext";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 export default () => {
   return (
@@ -49,15 +50,16 @@ export default () => {
           </Sticky>
 
           <BannerSection />
-          <FeatureSection />
+          <TeamSection />
           <InfoSection />
-          <PricingSection />
           <DomainSection />
+          {/* <FeatureSection />
+          <PricingSection />
           <ServicesSection />
           <PaymentSection />
-          <TestimonialSection />
           <GuaranteeSection />
-          <FaqSection />
+          <FaqSection /> */}
+          <TestimonialSection />
           <ContactSection />
           <Footer />
         </ContentWrapper>

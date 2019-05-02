@@ -108,17 +108,17 @@ export const MENU_ITEMS = [
   },
   {
     label: "About Us",
-    path: "#feature_section",
+    path: "#teamSection",
     offset: "70"
   },
   {
     label: "Sellers",
-    path: "#service_section",
+    path: "#info_section",
     offset: "70"
   },
   {
     label: "Buyers",
-    path: "#faq_section",
+    path: "#domain_section",
     offset: "70"
   },
   {
