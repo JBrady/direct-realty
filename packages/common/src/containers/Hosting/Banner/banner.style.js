@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BannerBG from "../../../assets/image/hosting/banner-bg-a.jpg";
+import BannerBG from "../../../assets/image/hosting/banner-bg-c.jpg";
 
 const BannerWrapper = styled.section`
   padding-top: 210px;
@@ -32,6 +32,7 @@ const BannerWrapper = styled.section`
   }
   .banner_container {
     position: relative;
+    background: rgba(0, 0, 0, 0.51);
   }
 `;
 

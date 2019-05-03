@@ -393,23 +393,36 @@ export const YEARLY_PRICING_TABLE = [
 export const TESTIMONIALS = [
   {
     review:
-      "Best working experience  with this amazing team & in future, we want to work together",
-    name: "Denny Hilguston",
-    designation: "CEO of Dell Co.",
+      "Joe found us a fixer upper and was hands on with the renovation process. \
+      He has access to a team of contractors, and designers who were able to get the house ready for us to flip \
+      in just under 2 months. We relisted and got an offer above our asking price! More than satisfied with my \
+      experience with Joe! I recommend him to all my friends.",
+    name: "manfeyb",
+    designation:
+      "Bought and sold a Single Family home in 2016 in Northwest, Chula Vista, CA.",
     avatar: `${AuthorOne}`
   },
   {
     review:
-      "Impressed with master class support of the team and really look forward for the future.",
-    name: "Justin Albuz",
-    designation: "Co Founder of IBM",
+      "Joe can buy or sell my property anytime. Initially working with his dad, Joe helped my wife \
+      and I find our retirement home. With Joe's very professional work and clear ability to deal \
+      with people we were able to sell a home and purchase a new one with ease. I truly believe that \
+      Joe's strongest   asset is that he not only looks for a sell, but he looks for the satisfaction \
+      of his customers. WE ARE SATISFIED!!",
+    name: "chicox32001",
+    designation: "Bought and sold a Single Family home in 2013 in Bonita, CA.",
     avatar: `${AuthorTwo}`
   },
   {
     review:
-      "I have bought more than 10 themes on ThemeForest, and this is the first one I review.",
-    name: "Milly Cristiana",
-    designation: "Manager of Hp co.",
+      "Trustworthy Agent! Joe and his family team listed our home in Otay Ranch earlier this year. \
+      However, we decided not to upgrade to a larger home at this time. Afterward, Joe went out of \
+      his way to connect us with a lender who was able to significantly lower our monthly payment. \
+      Joe has a no   pressure approach and did not try to push us into a new house which would have \
+      meant a higher mortgage payment.",
+    name: "celinam7",
+    designation:
+      "Listed my Single Family home in 2015 in Otay Ranch, Chula Vista, CA.",
     avatar: `${AuthorThree}`
   }
 ];

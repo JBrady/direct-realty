@@ -114,7 +114,7 @@ BannerSection.defaultProps = {
   title: {
     fontSize: ["26px", "32px", "42px", "46px", "55px"],
     fontWeight: "400",
-    color: "#0f2137",
+    color: "#ffffff",
     letterSpacing: "-0.025em",
     mb: ["20px", "25px", "25px", "25px", "25px"],
     lineHeight: "1.31",
