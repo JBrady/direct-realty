@@ -14,8 +14,7 @@
     "lerna": "^3.4.3",
     "lint-staged": "^8.0.4",
     "prettier": "^1.15.2",
-    "rimraf": "^2.6.3",
-    "stylelint-config-recommended": "^2.2.0"
+    "rimraf": "^2.6.3"
   },
   "workspaces": [
     "packages/common",
@@ -48,5 +47,8 @@
       "prettier --trailing-comma es5 --single-quote --write",
       "git add"
     ]
+  },
+  "dependencies": {
+    "yarn": "^1.15.2"
   }
 }
