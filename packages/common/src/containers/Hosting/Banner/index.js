@@ -1,25 +1,25 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Link from "next/link";
-import Icon from "react-icons-kit";
-import Box from "reusecore/src/elements/Box";
-import Text from "reusecore/src/elements/Text";
-import Heading from "reusecore/src/elements/Heading";
-import Button from "reusecore/src/elements/Button";
-import Input from "reusecore/src/elements/Input";
-import Select from "reusecore/src/elements/Select";
-import Container from "../../../components/UI/Container";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'next/link';
+import Icon from 'react-icons-kit';
+import Box from 'reusecore/src/elements/Box';
+import Text from 'reusecore/src/elements/Text';
+import Heading from 'reusecore/src/elements/Heading';
+import Button from 'reusecore/src/elements/Button';
+import Input from 'reusecore/src/elements/Input';
+import Select from 'reusecore/src/elements/Select';
+import Container from '../../../components/UI/Container';
 // import ParticlesComponent from "../../Hosting/Particle";
 import BannerWrapper, {
   SearchWrapper,
   List,
   DiscountWrapper,
-  DiscountLabel
-} from "./banner.style";
+  DiscountLabel,
+} from './banner.style';
 
-import { search } from "react-icons-kit/feather/search";
+import { search } from 'react-icons-kit/feather/search';
 
-import { DOMAIN_NAMES, DOMAIN_PRICE } from "../../../data/Hosting/data";
+import { DOMAIN_NAMES, DOMAIN_PRICE } from '../../../data/Hosting/data';
 
 const BannerSection = ({
   row,
@@ -29,7 +29,7 @@ const BannerSection = ({
   textArea,
   searchArea,
   discountAmount,
-  discountText
+  discountText,
 }) => {
   return (
     <BannerWrapper id="banner_section">
@@ -98,66 +98,66 @@ BannerSection.propTypes = {
   button: PropTypes.object,
   searchArea: PropTypes.object,
   discountAmount: PropTypes.object,
-  discountText: PropTypes.object
+  discountText: PropTypes.object,
 };
 
 BannerSection.defaultProps = {
   row: {
     flexBox: true,
-    flexWrap: "wrap",
-    alignItems: "center",
-    justifyContent: "center"
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   textArea: {
-    width: ["100%", "100%", "90%", "100%", "55%"]
+    width: ['100%', '100%', '90%', '100%', '70%'],
   },
   title: {
-    fontSize: ["26px", "32px", "42px", "46px", "55px"],
-    fontWeight: "400",
-    color: "#ffffff",
-    letterSpacing: "-0.025em",
-    mb: ["20px", "25px", "25px", "25px", "25px"],
-    lineHeight: "1.31",
-    textAlign: "center"
+    fontSize: ['26px', '32px', '42px', '46px', '55px'],
+    fontWeight: '400',
+    color: '#ffffff',
+    letterSpacing: '-0.025em',
+    mb: ['20px', '25px', '25px', '25px', '25px'],
+    lineHeight: '1.31',
+    textAlign: 'center',
   },
   description: {
-    fontSize: ["15px", "16px", "16px", "16px", "16px"],
-    color: "#343d48cc",
-    lineHeight: "1.75",
-    mb: "0",
-    textAlign: "center"
+    fontSize: ['15px', '16px', '16px', '16px', '16px'],
+    color: '#ffffff',
+    lineHeight: '1.75',
+    mb: '0',
+    textAlign: 'center',
   },
   button: {
-    title: "Search",
-    type: "button",
-    fontSize: "18px",
-    fontWeight: "500",
-    color: "#fff",
-    pl: "22px",
-    pr: "22px",
-    colors: "primaryWithBg",
-    iconPosition: "left"
+    title: 'Search',
+    type: 'button',
+    fontSize: '18px',
+    fontWeight: '500',
+    color: '#fff',
+    pl: '22px',
+    pr: '22px',
+    colors: 'primaryWithBg',
+    iconPosition: 'left',
   },
   searchArea: {
-    className: "search_area",
-    width: ["100%", "100%", "80%", "100%", "70%"],
-    mt: ["45px", "50px", "60px", "60px", "60px"]
+    className: 'search_area',
+    width: ['100%', '100%', '80%', '100%', '70%'],
+    mt: ['45px', '50px', '60px', '60px', '60px'],
   },
   discountAmount: {
-    fontSize: ["13px", "14px", "14px", "14px", "14px"],
-    fontWeight: "600",
-    color: "#eb4d4b",
+    fontSize: ['13px', '14px', '14px', '14px', '14px'],
+    fontWeight: '600',
+    color: '#eb4d4b',
     mb: 0,
-    as: "span",
-    mr: "0.4em"
+    as: 'span',
+    mr: '0.4em',
   },
   discountText: {
-    fontSize: ["13px", "14px", "14px", "14px", "14px"],
-    fontWeight: "400",
-    color: "#0f2137",
+    fontSize: ['13px', '14px', '14px', '14px', '14px'],
+    fontWeight: '400',
+    color: '#0f2137',
     mb: 0,
-    as: "span"
-  }
+    as: 'span',
+  },
 };
 
 export default BannerSection;

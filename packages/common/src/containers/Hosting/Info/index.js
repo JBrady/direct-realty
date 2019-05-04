@@ -1,17 +1,17 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Link from "next/link";
-import Fade from "react-reveal/Fade";
-import Box from "reusecore/src/elements/Box";
-import Text from "reusecore/src/elements/Text";
-import Heading from "reusecore/src/elements/Heading";
-import Button from "reusecore/src/elements/Button";
-import Card from "reusecore/src/elements/Card";
-import Image from "reusecore/src/elements/Image";
-import Container from "../../../components/UI/Container";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'next/link';
+import Fade from 'react-reveal/Fade';
+import Box from 'reusecore/src/elements/Box';
+import Text from 'reusecore/src/elements/Text';
+import Heading from 'reusecore/src/elements/Heading';
+import Button from 'reusecore/src/elements/Button';
+import Card from 'reusecore/src/elements/Card';
+import Image from 'reusecore/src/elements/Image';
+import Container from '../../../components/UI/Container';
 
-import ImageOne from "../../../assets/image/hosting/info1.png";
-import ImageTwo from "../../../assets/image/hosting/info2.png";
+import ImageOne from '../../../assets/image/hosting/info1.jpg';
+import ImageTwo from '../../../assets/image/hosting/info2.jpg';
 
 const InfoSection = ({
   sectionWrapper,
@@ -25,7 +25,7 @@ const InfoSection = ({
   imageAreaRow,
   imageWrapper,
   imageWrapperOne,
-  imageWrapperTwo
+  imageWrapperTwo,
 }) => {
   return (
     <Box {...sectionWrapper}>
@@ -81,71 +81,71 @@ InfoSection.propTypes = {
   imageAreaRow: PropTypes.object,
   imageWrapper: PropTypes.object,
   imageWrapperOne: PropTypes.object,
-  imageWrapperTwo: PropTypes.object
+  imageWrapperTwo: PropTypes.object,
 };
 
 InfoSection.defaultProps = {
   sectionWrapper: {
-    as: "section",
-    pt: ["0px", "0px", "0px", "0px", "80px"],
-    pb: ["60px", "80px", "40px", "80px", "80px"],
-    id: "info_section"
+    as: 'section',
+    pt: ['0px', '0px', '0px', '0px', '80px'],
+    pb: ['60px', '80px', '40px', '80px', '80px'],
+    id: 'info_section',
   },
   row: {
     flexBox: true,
-    flexWrap: "wrap",
-    ml: "-15px",
-    mr: "-15px"
+    flexWrap: 'wrap',
+    ml: '-15px',
+    mr: '-15px',
   },
   imageAreaRow: {
-    flexDirection: "row-reverse"
+    flexDirection: 'row-reverse',
   },
   col: {
-    pr: "15px",
-    pl: "15px"
+    pr: '15px',
+    pl: '15px',
   },
   textArea: {
-    width: ["100%", "100%", "55%", "50%", "42%"]
+    width: ['100%', '100%', '55%', '50%', '42%'],
   },
   imageArea: {
-    width: ["100%", "100%", "50%"],
+    width: ['100%', '100%', '50%'],
     flexBox: true,
-    flexDirection: "row-reverse"
+    flexDirection: 'row-reverse',
   },
   imageWrapper: {
-    boxShadow: "none"
+    boxShadow: 'none',
   },
   imageWrapperOne: {
-    ml: "-200px"
+    ml: '-200px',
   },
   imageWrapperTwo: {
-    alignSelf: "flex-end",
-    mb: "-60px"
+    alignSelf: 'flex-end',
+    mb: '-60px',
   },
   title: {
-    fontSize: ["30px", "38px", "38px", "48px", "48px"],
-    fontWeight: "300",
-    color: "#0f2137",
-    letterSpacing: "-0.025em",
-    mb: "20px"
+    fontSize: ['30px', '38px', '38px', '48px', '48px'],
+    fontWeight: '300',
+    color: '#0f2137',
+    letterSpacing: '-0.025em',
+    mb: '20px',
   },
   description: {
-    fontSize: ["15px", "16px", "16px", "16px", "16px"],
-    color: "#343d48cc",
-    lineHeight: "1.75",
-    mb: "33px"
+    fontSize: ['15px', '16px', '16px', '16px', '16px'],
+    color: '#343d48cc',
+    lineHeight: '1.75',
+    mb: '33px',
   },
   button: {
-    type: "button",
-    fontSize: "14px",
-    fontWeight: "600",
-    color: "#fff",
-    borderRadius: "4px",
-    pl: "22px",
-    pr: "22px",
-    colors: "primaryWithBg",
-    height: `{5}`
-  }
+    type: 'button',
+    fontSize: '14px',
+    fontWeight: '600',
+    color: '#fff',
+    borderRadius: '4px',
+    pl: '22px',
+    pr: '22px',
+    colors: 'primaryWithBg',
+    height: `{5}`,
+  },
 };
 
 export default InfoSection;

@@ -1,6 +1,6 @@
-import styled, { createGlobalStyle } from "styled-components";
-import { themeGet } from "styled-system";
-import FeatureBlock from "../../components/FeatureBlock";
+import styled, { createGlobalStyle } from 'styled-components';
+import { themeGet } from 'styled-system';
+import FeatureBlock from '../../components/FeatureBlock';
 
 export const GlobalStyle = createGlobalStyle`
   body{
@@ -110,10 +110,10 @@ export const GlobalStyle = createGlobalStyle`
 
   /* Modal default style */
   button.modalCloseBtn {
-    color: ${themeGet("colors.white", "#ffffff")} !important;
+    color: ${themeGet('colors.white', '#ffffff')} !important;
 
     &.alt {
-      background-color: ${themeGet("colors.primary", "#5268db")} !important;
+      background-color: ${themeGet('colors.primary', '#5268db')} !important;
       box-shadow: 0px 9px 20px -5px rgba(82, 104, 219, 0.57) !important;
     }
   }
@@ -122,14 +122,14 @@ export const GlobalStyle = createGlobalStyle`
 export const ContentWrapper = styled.div`
   overflow: hidden;
   .sticky-outer-wrapper {
-    .hosting_navbar {
+    /* .hosting_navbar {
       background: rgb(0, 0, 0);
       background: linear-gradient(
         180deg,
         rgba(70, 70, 70) 0%,
         rgba(255, 255, 255, 0) 100%
       );
-    }
+    } */
     &.sticky-nav-active {
       .hosting_navbar {
         background: #fff;
@@ -263,7 +263,7 @@ export const ContentWrapper = styled.div`
         }
 
         &:before {
-          content: "";
+          content: '';
           position: absolute;
           width: 85%;
           height: 0;
@@ -310,7 +310,7 @@ export const FeatureItem = styled(FeatureBlock)`
   }
 
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 100%;

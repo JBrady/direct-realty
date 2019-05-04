@@ -1,13 +1,13 @@
-import React, { Fragment } from "react";
-import PropTypes from "prop-types";
-import Box from "reusecore/src/elements/Box";
-import Text from "reusecore/src/elements/Text";
-import Heading from "reusecore/src/elements/Heading";
-import Image from "reusecore/src/elements/Image";
-import FeatureBlock from "../../../components/FeatureBlock";
-import data from "../../../data/Hosting";
-import Container from "../../../components/UI/Container";
-import TeamSectionWrapper, { SocialLinks } from "./teamSection.style";
+import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
+import Box from 'reusecore/src/elements/Box';
+import Text from 'reusecore/src/elements/Text';
+import Heading from 'reusecore/src/elements/Heading';
+import Image from 'reusecore/src/elements/Image';
+import FeatureBlock from '../../../components/FeatureBlock';
+import data from '../../../data/Hosting';
+import Container from '../../../components/UI/Container';
+import TeamSectionWrapper, { SocialLinks } from './teamSection.style';
 
 const TeamSection = ({
   row,
@@ -19,7 +19,7 @@ const TeamSection = ({
   designation,
   bio,
   specialties,
-  contentStyle
+  contentStyle,
 }) => {
   return (
     <TeamSectionWrapper id="teamSection">
@@ -77,87 +77,86 @@ TeamSection.propTypes = {
   memberName: PropTypes.object,
   designation: PropTypes.object,
   specialties: PropTypes.object,
-  bio: PropTypes.object
+  bio: PropTypes.object,
 };
 
 // TeamSection default style
 TeamSection.defaultProps = {
   // section header default style
   sectionHeader: {
-    mb: ["40px", "56px"]
+    mb: ['40px', '56px'],
   },
   // sub section default style
   sectionSubTitle: {
-    as: "span",
-    display: "block",
-    textAlign: "center",
-    fontSize: "14px",
-    letterSpacing: "0.15em",
-    fontWeight: "700",
-    color: "#10ac84",
-    mb: "10px"
+    as: 'span',
+    display: 'block',
+    textAlign: 'center',
+    fontSize: '14px',
+    letterSpacing: '0.15em',
+    fontWeight: '700',
+    color: '#10ac84',
+    mb: '10px',
   },
   // section title default style
   sectionTitle: {
-    textAlign: "center",
-    fontSize: ["20px", "24px"],
-    fontWeight: "400",
-    color: "#0f2137",
-    letterSpacing: "-0.025em",
-    mb: "0"
+    textAlign: 'center',
+    fontSize: ['20px', '24px'],
+    fontWeight: '400',
+    color: '#0f2137',
+    letterSpacing: '-0.025em',
+    mb: '0',
   },
   // Team member row default style
   row: {
     flexBox: true,
-    flexWrap: "wrap",
-    ml: "-15px",
-    mr: "-15px"
+    flexWrap: 'wrap',
+    ml: '-15px',
+    mr: '-15px',
   },
   // Team member col default style
   col: {
     width: [1, 1 / 2, 1 / 3, 1 / 3],
-    pl: "15px",
-    pr: "15px",
-    mb: "30px"
+    pl: '15px',
+    pr: '15px',
+    mb: '30px',
   },
   // Team member content default style
   contentStyle: {
-    textAlign: "center",
-    mt: "25px"
+    textAlign: 'center',
+    mt: '25px',
   },
   // Team member memberName default style
   memberName: {
-    fontSize: ["18px", "18px", "16px", "20px"],
-    fontWeight: "400",
-    color: "#0f2137",
-    lineHeight: "1.5",
-    mb: "8px",
-    letterSpacing: "-0.020em"
+    fontSize: ['18px', '18px', '16px', '20px'],
+    fontWeight: '400',
+    color: '#0f2137',
+    lineHeight: '1.5',
+    mb: '8px',
+    letterSpacing: '-0.020em',
   },
   // Team member designation default style
   designation: {
-    fontSize: ["15px", "16px", "14px", "17px"],
-    lineHeight: "1",
-    color: "rgba(15, 33, 55, 0.6)",
-    mb: 0
+    fontSize: ['15px', '16px', '14px', '17px'],
+    lineHeight: '1',
+    color: 'rgba(15, 33, 55, 0.6)',
+    mb: 0,
   },
   // Team member specialties default style
   specialties: {
-    fontSize: ["13px", "14px", "12px", "15px"],
-    color: "rgba(15, 33, 55, 0.6)",
-    textAlign: "left",
-    mt: "25px",
-    mb: 0
+    fontSize: ['13px', '14px', '12px', '15px'],
+    color: 'rgba(15, 33, 55, 0.6)',
+    textAlign: 'left',
+    mt: '25px',
+    mb: 0,
   },
   // Team member bio default style
   bio: {
-    fontSize: ["13px", "14px", "12px", "15px"],
-    // lineHeight: "1",
-    color: "rgba(15, 33, 55, 0.6)",
+    fontSize: ['13px', '14px', '12px', '15px'],
+    color: 'rgba(15, 33, 55, 0.6)',
     mb: 0,
-    textAlign: "left",
-    mt: "25px"
-  }
+    textAlign: 'left',
+    mt: '25px',
+  },
 };
 
 export default TeamSection;
