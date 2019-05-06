@@ -9,17 +9,6 @@ import {
 } from 'common/src/containers/Hosting/hosting.style';
 import { ResetCSS } from 'common/src/assets/css/style';
 import Navbar from 'common/src/containers/Hosting/Navbar';
-import FeatureSection from 'common/src/containers/Hosting/Features';
-import InfoSection from 'common/src/containers/Hosting/Info';
-import DomainSection from 'common/src/containers/Hosting/Domain';
-// import PaymentSection from "common/src/containers/Hosting/Payment";
-// import GuaranteeSection from "common/src/containers/Hosting/Guarantee";
-// import FaqSection from "common/src/containers/Hosting/Faq";
-// import ServicesSection from "common/src/containers/Hosting/Services";
-import BannerSection from 'common/src/containers/Hosting/Banner';
-// import PricingSection from "common/src/containers/Hosting/Pricing";
-import TestimonialSection from 'common/src/containers/Hosting/Testimonials';
-import TeamSection from 'common/src/containers/Hosting/TeamSection';
 import ContactSection from 'common/src/containers/Hosting/Contact';
 import Footer from 'common/src/containers/Hosting/Footer';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
@@ -30,10 +19,7 @@ export default () => {
     <ThemeProvider theme={hostingTheme}>
       <ParallaxProvider>
         <Head>
-          <title>
-            Direct Realty | You deserve the best, expect the best, now
-            experience the best
-          </title>
+          <title>Direct Realty |Joe Gonzalez</title>
           <meta name="Description" content="React next landing page" />
           <meta name="theme-color" content="#eb4d4b" />
           <link
@@ -52,17 +38,17 @@ export default () => {
             </DrawerProvider>
           </Sticky>
 
-          <BannerSection />
-          <TeamSection />
-          <FeatureSection />
+          {/* <BannerSection /> */}
+          {/* <TeamSection /> */}
+          {/* <FeatureSection />
           <InfoSection />
-          <DomainSection />
+          <DomainSection /> */}
           {/* <PricingSection />
           <ServicesSection />
           <PaymentSection />
           <GuaranteeSection />
           <FaqSection /> */}
-          <TestimonialSection />
+          {/* <TestimonialSection /> */}
           <ContactSection />
           <Footer />
         </ContentWrapper>
@@ -70,3 +56,11 @@ export default () => {
     </ThemeProvider>
   );
 };
+
+// export default function JoeGonzalez() {
+//   return (
+//     <div>
+//       <p>This is Joe Gonzalez's detail page</p>
+//     </div>
+//   );
+// }

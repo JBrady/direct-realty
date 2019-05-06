@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import Link from 'next/link';
 import PropTypes from 'prop-types';
 import Box from 'reusecore/src/elements/Box';
 import Text from 'reusecore/src/elements/Text';
@@ -30,7 +31,7 @@ const TeamSection = ({
         </Box>
         <Box className="row" {...row}>
           {data.teamMember.map((member, index) => (
-            <Box className="col" {...col} key={`team_key-${index}`}>
+            <Box className="agent_card col" {...col} key={`team_key-${index}`}>
               <FeatureBlock
                 id={`member-${member.id}`}
                 className="team__member"
@@ -45,7 +46,11 @@ const TeamSection = ({
                 title={<Heading content={member.name} {...memberName} />}
                 description={
                   <Fragment>
-                    <Text content={member.designation} {...designation} />
+                    <Link href="real-estate-agents/joe-gonzalez">
+                      <a>
+                        <Text content={member.designation} {...designation} />
+                      </a>
+                    </Link>
                     <Text content={member.specialties} {...specialties} />
                     <Text content={member.bio} {...bio} />
                     <SocialLinks>
