@@ -42,6 +42,10 @@ const FooterWrapper = styled.footer`
       padding-bottom: 0px;
     }
   }
+
+  .finePrint {
+    text-align: left;
+  }
 `;
 
 const List = styled.ul``;

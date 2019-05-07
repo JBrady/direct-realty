@@ -20,6 +20,7 @@ const Footer = ({
   titleStyle,
   logoStyle,
   textStyle,
+  finePrint,
 }) => {
   return (
     <FooterWrapper>
@@ -37,6 +38,21 @@ const Footer = ({
               logoStyle={logoStyle}
             />
           </Box>
+          <Text
+            className="finePrint"
+            content="This information is deemed reliable but not guaranteed. 
+          You should rely on this information only to decide whether or not to further investigate a particular 
+          property. BEFORE MAKING ANY OTHER DECISION, YOU SHOULD PERSONALLY INVESTIGATE THE FACTS 
+          (e.g. square footage and lot size) with the assistance of an appropriate professional. 
+          You may use this information only to identify properties you may be interested in investigating further. 
+          All uses except for personal, non-commercial use in accordance with the foregoing purpose are prohibited. 
+          Redistribution or copying of this information, any photographs or video tours is strictly prohibited. 
+          This information is derived from the Internet Data Exchange (IDX) service provided by San Diego MLS. 
+          Displayed property listings may be held by a brokerage firm other than the broker and/or agent responsible 
+          for this display. The information and any photographs and video tours and the compilation from which they 
+          are derived is protected by copyright. Compilation © 2019 San Diego MLS."
+            {...finePrint}
+          />
           {/* <Box {...colOne}>
             <Logo
               href="#"
@@ -81,6 +97,7 @@ Footer.propTypes = {
   titleStyle: PropTypes.object,
   textStyle: PropTypes.object,
   logoStyle: PropTypes.object,
+  finePrint: PropTypes.object,
 };
 
 // Footer default style
@@ -130,6 +147,12 @@ Footer.defaultProps = {
   textStyle: {
     color: '#0f2137',
     fontSize: '16px',
+    mb: '10px',
+  },
+  // widget text default style
+  finePrint: {
+    color: '#0f2137',
+    fontSize: '10px',
     mb: '10px',
   },
 };
