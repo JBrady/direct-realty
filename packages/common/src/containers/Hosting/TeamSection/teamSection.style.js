@@ -8,17 +8,44 @@ const TeamSectionWrapper = styled.section`
   }
 
   .team__member {
+    border: #e2e2e2 1px solid;
+    display: flex;
+    flex-direction: column;
+
+    .content__wrapper {
+      border-top: #e2e2e2 1px solid;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      background-color: #f0f1f3;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      h2,
+      p {
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+    }
+
     .icon__wrapper {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
     }
+
+    .socialLinks {
+      margin-top: auto;
+      padding-top: 12px;
+    }
+  }
+
+  .member__photo {
+    margin-top: 20px;
   }
 `;
 
 const SocialLinks = styled.div`
-  margin-top: 12px;
   > button {
     margin: 3px;
     cursor: pointer;

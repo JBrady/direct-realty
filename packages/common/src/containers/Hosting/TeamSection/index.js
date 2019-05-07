@@ -9,6 +9,7 @@ import FeatureBlock from '../../../components/FeatureBlock';
 import data from '../../../data/Hosting';
 import Container from '../../../components/UI/Container';
 import TeamSectionWrapper, { SocialLinks } from './teamSection.style';
+import { List } from '../Banner/banner.style';
 
 const TeamSection = ({
   row,
@@ -19,16 +20,25 @@ const TeamSection = ({
   memberName,
   designation,
   bio,
+  bio2,
+  bio3,
   specialties,
+  ca_dre_number,
   contentStyle,
 }) => {
   return (
     <TeamSectionWrapper id="teamSection">
       <Container>
+        <Box>
+          <Text content="Our team focuses on taking the pressure off of you so you can make the best decisions for you and your family." />
+          <Text content="We are there for you 24/7 – Call or email us anytime!" />
+        </Box>
+
         <Box {...sectionHeader}>
           <Text content="ABOUT US" {...sectionSubTitle} />
           <Heading content="Meet the Team" {...sectionTitle} />
         </Box>
+
         <Box className="row" {...row}>
           {data.teamMember.map((member, index) => (
             <Box className="agent_card col" {...col} key={`team_key-${index}`}>
@@ -46,14 +56,13 @@ const TeamSection = ({
                 title={<Heading content={member.name} {...memberName} />}
                 description={
                   <Fragment>
-                    <Link href="real-estate-agents/joe-gonzalez">
-                      <a>
-                        <Text content={member.designation} {...designation} />
-                      </a>
-                    </Link>
+                    <Text content={member.designation} {...designation} />
+                    <Text content={member.ca_dre_number} {...ca_dre_number} />
                     <Text content={member.specialties} {...specialties} />
                     <Text content={member.bio} {...bio} />
-                    <SocialLinks>
+                    <Text content={member.bio2} {...bio2} />
+                    <Text content={member.bio3} {...bio3} />
+                    <SocialLinks className="socialLinks">
                       {member.social_links.map((social, index) => (
                         <button
                           key={`profile_id-${index}`}
@@ -82,7 +91,10 @@ TeamSection.propTypes = {
   memberName: PropTypes.object,
   designation: PropTypes.object,
   specialties: PropTypes.object,
+  ca_dre_number: PropTypes.object,
   bio: PropTypes.object,
+  bio2: PropTypes.object,
+  bio3: PropTypes.object,
 };
 
 // TeamSection default style
@@ -120,6 +132,8 @@ TeamSection.defaultProps = {
   },
   // Team member col default style
   col: {
+    flexBox: true,
+    flexWrap: 'wrap',
     width: [1, 1 / 2, 1 / 3, 1 / 3],
     pl: '15px',
     pr: '15px',
@@ -128,7 +142,7 @@ TeamSection.defaultProps = {
   // Team member content default style
   contentStyle: {
     textAlign: 'center',
-    mt: '25px',
+    mt: '0',
   },
   // Team member memberName default style
   memberName: {
@@ -143,21 +157,45 @@ TeamSection.defaultProps = {
   designation: {
     fontSize: ['15px', '16px', '14px', '17px'],
     lineHeight: '1',
-    color: 'rgba(15, 33, 55, 0.6)',
+    color: '#656565',
     mb: 0,
   },
   // Team member specialties default style
   specialties: {
-    fontSize: ['13px', '14px', '12px', '15px'],
-    color: 'rgba(15, 33, 55, 0.6)',
+    fontSize: ['11px', '12px', '11px', '13px'],
+    color: '#656565',
+    textAlign: 'left',
+    mt: '25px',
+    mb: 0,
+  },
+  // Team member ca_dre_number default style
+  ca_dre_number: {
+    fontSize: ['11px', '12px', '11px', '13px'],
+    color: '#656565',
     textAlign: 'left',
     mt: '25px',
     mb: 0,
   },
   // Team member bio default style
   bio: {
-    fontSize: ['13px', '14px', '12px', '15px'],
-    color: 'rgba(15, 33, 55, 0.6)',
+    fontSize: ['12px', '13px', '11px', '14px'],
+    color: '#656565',
+    mb: 0,
+    textAlign: 'left',
+    mt: '25px',
+  },
+  // Team member bio default style
+  bio2: {
+    fontSize: ['12px', '13px', '11px', '14px'],
+    color: '#656565',
+    mb: 0,
+    textAlign: 'left',
+    mt: '25px',
+  },
+  // Team member bio default style
+  bio3: {
+    fontSize: ['12px', '13px', '11px', '14px'],
+    color: '#656565',
     mb: 0,
     textAlign: 'left',
     mt: '25px',

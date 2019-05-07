@@ -8,6 +8,19 @@ import {
   AuthorOne,
   AuthorTwo,
   AuthorThree,
+  ReviewOne,
+  ReviewTwo,
+  ReviewThree,
+  ReviewFour,
+  ReviewFive,
+  ReviewSix,
+  ReviewSeven,
+  ReviewEight,
+  ReviewNine,
+  ReviewTen,
+  ReviewEleven,
+  ReviewTwelve,
+  ReviewThirteen,
 } from './images';
 
 // Feature Section Content
@@ -122,15 +135,15 @@ export const MENU_ITEMS = [
     offset: '70',
   },
   {
-    label: 'Testimonial',
+    label: 'Reviews',
     path: '#testimonial_section',
     offset: '70',
   },
-  {
-    label: 'Contact',
-    path: '#contact_section',
-    offset: '70',
-  },
+  // {
+  //   label: 'Contact',
+  //   path: '#contact_section',
+  //   offset: '70',
+  // },
 ];
 
 export const FOOTER_WIDGET = [
@@ -138,96 +151,99 @@ export const FOOTER_WIDGET = [
     title: 'About Us',
     menuItems: [
       {
-        url: '#',
-        text: 'Support Center',
-      },
-      {
-        url: '#',
-        text: 'Customer Support',
-      },
-      {
-        url: '#',
+        url: '#teamSection',
         text: 'About Us',
       },
-      {
-        url: '#',
-        text: 'Copyright',
-      },
-      {
-        url: '#',
-        text: 'Popular Campaign',
-      },
+      // {
+      //   url: "#",
+      //   text: "Customer Support"
+      // },
+      // {
+      //   url: "#",
+      //   text: "About Us"
+      // },
+      // {
+      //   url: "#",
+      //   text: "Copyright"
+      // },
+      // {
+      //   url: "#",
+      //   text: "Popular Campaign"
+      // }
     ],
   },
+
   {
-    title: 'Our Information',
+    title: 'Sellers',
+    menuItems: [
+      {
+        url: '#info_section',
+        text: 'Sellers',
+      },
+      // {
+      //   url: "#",
+      //   text: "Privacy Policy"
+      // },
+      // {
+      //   url: "#",
+      //   text: "Terms & Conditions"
+      // },
+      // {
+      //   url: "#",
+      //   text: "Site Map"
+      // },
+      // {
+      //   url: "#",
+      //   text: "Store Hours"
+      // }
+    ],
+  },
+
+  {
+    title: 'Buyers',
+    menuItems: [
+      {
+        url: '#domain_section',
+        text: 'Buyers',
+      },
+      // {
+      //   url: "#",
+      //   text: "Social media directories"
+      // },
+      // {
+      //   url: "#",
+      //   text: "Images & B-roll"
+      // },
+      // {
+      //   url: "#",
+      //   text: "Permissions"
+      // },
+      // {
+      //   url: "#",
+      //   text: "Speaker requests"
+      // }
+    ],
+  },
+
+  {
+    title: 'Reviews',
     menuItems: [
       {
         url: '#',
-        text: 'Return Policy',
+        text: 'Reviews',
       },
-      {
-        url: '#',
-        text: 'Privacy Policy',
-      },
-      {
-        url: '#',
-        text: 'Terms & Conditions',
-      },
-      {
-        url: '#',
-        text: 'Site Map',
-      },
-      {
-        url: '#',
-        text: 'Store Hours',
-      },
-    ],
-  },
-  {
-    title: 'My Account',
-    menuItems: [
-      {
-        url: '#',
-        text: 'Press inquiries',
-      },
-      {
-        url: '#',
-        text: 'Social media directories',
-      },
-      {
-        url: '#',
-        text: 'Images & B-roll',
-      },
-      {
-        url: '#',
-        text: 'Permissions',
-      },
-      {
-        url: '#',
-        text: 'Speaker requests',
-      },
-    ],
-  },
-  {
-    title: 'Policy',
-    menuItems: [
-      {
-        url: '#',
-        text: 'Application security',
-      },
-      {
-        url: '#',
-        text: 'Software principles',
-      },
-      {
-        url: '#',
-        text: 'Unwanted software policy',
-      },
-      {
-        url: '#',
-        text: 'Responsible supply chain',
-      },
+      // {
+      //   url: "#",
+      //   text: "Software principles"
+      // },
+      // {
+      //   url: "#",
+      //   text: "Unwanted software policy"
+      // },
+      // {
+      //   url: "#",
+      //   text: "Responsible supply chain"
+      // }
     ],
   },
 ];
@@ -392,38 +408,68 @@ export const YEARLY_PRICING_TABLE = [
 
 export const TESTIMONIALS = [
   {
-    review:
-      'Joe found us a fixer upper and was hands on with the renovation process. \
-      He has access to a team of contractors, and designers who were able to get the house ready for us to flip \
-      in just under 2 months. We relisted and got an offer above our asking price! More than satisfied with my \
-      experience with Joe! I recommend him to all my friends.',
-    name: 'manfeyb',
-    designation:
-      'Bought and sold a Single Family home in 2016 in Northwest, Chula Vista, CA.',
-    avatar: `${AuthorOne}`,
+    // review:
+    //   "Joe found us a fixer upper and was hands on with the renovation process. \
+    //   He has access to a team of contractors, and designers who were able to get the house ready for us to flip \
+    //   in just under 2 months. We relisted and got an offer above our asking price! More than satisfied with my \
+    //   experience with Joe! I recommend him to all my friends.",
+    // name: "manfeyb",
+    // designation:
+    //   "Bought and sold a Single Family home in 2016 in Northwest, Chula Vista, CA.",
+    avatar: `${ReviewOne}`,
   },
   {
-    review:
-      "Joe can buy or sell my property anytime. Initially working with his dad, Joe helped my wife \
-      and I find our retirement home. With Joe's very professional work and clear ability to deal \
-      with people we were able to sell a home and purchase a new one with ease. I truly believe that \
-      Joe's strongest   asset is that he not only looks for a sell, but he looks for the satisfaction \
-      of his customers. WE ARE SATISFIED!!",
-    name: 'chicox32001',
-    designation: 'Bought and sold a Single Family home in 2013 in Bonita, CA.',
-    avatar: `${AuthorTwo}`,
+    // review:
+    //   "Joe can buy or sell my property anytime. Initially working with his dad, Joe helped my wife \
+    //   and I find our retirement home. With Joe's very professional work and clear ability to deal \
+    //   with people we were able to sell a home and purchase a new one with ease. I truly believe that \
+    //   Joe's strongest   asset is that he not only looks for a sell, but he looks for the satisfaction \
+    //   of his customers. WE ARE SATISFIED!!",
+    // name: "chicox32001",
+    // designation: "Bought and sold a Single Family home in 2013 in Bonita, CA.",
+    avatar: `${ReviewTwo}`,
   },
   {
-    review:
-      'Trustworthy Agent! Joe and his family team listed our home in Otay Ranch earlier this year. \
-      However, we decided not to upgrade to a larger home at this time. Afterward, Joe went out of \
-      his way to connect us with a lender who was able to significantly lower our monthly payment. \
-      Joe has a no   pressure approach and did not try to push us into a new house which would have \
-      meant a higher mortgage payment.',
-    name: 'celinam7',
-    designation:
-      'Listed my Single Family home in 2015 in Otay Ranch, Chula Vista, CA.',
-    avatar: `${AuthorThree}`,
+    // review:
+    //   "Trustworthy Agent! Joe and his family team listed our home in Otay Ranch earlier this year. \
+    //   However, we decided not to upgrade to a larger home at this time. Afterward, Joe went out of \
+    //   his way to connect us with a lender who was able to significantly lower our monthly payment. \
+    //   Joe has a no   pressure approach and did not try to push us into a new house which would have \
+    //   meant a higher mortgage payment.",
+    // name: "celinam7",
+    // designation:
+    //   "Listed my Single Family home in 2015 in Otay Ranch, Chula Vista, CA.",
+    avatar: `${ReviewThree}`,
+  },
+  {
+    avatar: `${ReviewFour}`,
+  },
+  {
+    avatar: `${ReviewFive}`,
+  },
+  {
+    avatar: `${ReviewSix}`,
+  },
+  {
+    avatar: `${ReviewSeven}`,
+  },
+  {
+    avatar: `${ReviewEight}`,
+  },
+  {
+    avatar: `${ReviewNine}`,
+  },
+  {
+    avatar: `${ReviewTen}`,
+  },
+  {
+    avatar: `${ReviewEleven}`,
+  },
+  {
+    avatar: `${ReviewTwelve}`,
+  },
+  {
+    avatar: `${ReviewThirteen}`,
   },
 ];
 

@@ -49,7 +49,8 @@ const BannerSection = ({
               content="Honesty, hard work, and professionalism are the foundation of our real estate success."
             />
           </Box>
-          <Box {...searchArea}>
+
+          {/* <Box {...searchArea}>
             <SearchWrapper>
               <Input
                 inputType="text"
@@ -58,19 +59,19 @@ const BannerSection = ({
                 className="domain_search_input"
                 aria-label="domain_search_input"
               />
-              {/* <Select
+              <Select
                 options={DOMAIN_NAMES}
                 placeholder=".com"
                 className="domain_search_select"
                 aria-label="domain_search_input"
-              /> */}
+              />
               <Button
                 {...button}
                 icon={<Icon icon={search} size={24} />}
                 className="domain_search_button"
               />
             </SearchWrapper>
-            {/* <List>
+            <List>
               {DOMAIN_PRICE.map((item, index) => (
                 <li key={`domain-list-${index}`}>
                   {item.url ? (
@@ -82,8 +83,8 @@ const BannerSection = ({
                   )}
                 </li>
               ))}
-            </List> */}
-          </Box>
+            </List>
+          </Box> */}
         </Box>
       </Container>
     </BannerWrapper>

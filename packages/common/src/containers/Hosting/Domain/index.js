@@ -35,13 +35,25 @@ const DomainSection = ({
                 {...description}
                 content="These days anyone can use online resources to view many different aspects of the real estate market, but they need a guiding force more than ever to achieve this level of success."
               />
-              <Box>
+              <Text
+                {...description}
+                content="Our team tackles the toughest challenges by assessing, integrating and thinking through information. Often finding unique solutions before they become problems."
+              />
+              <Text
+                {...description}
+                content="Most of all, Kathleen and her team have an uncanny ability to understand the needs and wants of their clients, and develops a custom strategy specific to their unique situation – Conclusively translating their goals into tangible success, while making every transaction lighthearted from start to finish."
+              />
+              <Text
+                {...description}
+                content="With Direct Realty, your buying power has never been stronger. Success is just around the corner."
+              />
+              {/* <Box>
                 <Link href="#">
                   <a>
                     <Button {...button} title="EXPLORE MORE" />
                   </a>
                 </Link>
-              </Box>
+              </Box> */}
             </Fade>
           </Box>
         </Box>

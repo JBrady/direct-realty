@@ -86,7 +86,7 @@ const TestimonialSection = ({
     <TestimonialSecWrapper id="testimonial_section">
       <Container fullWidth noGutter>
         <Box {...secTitleWrapper}>
-          <Text {...secText} content="TESTIMONIALS " />
+          <Text {...secText} content="REVIEWS " />
           <Heading {...secHeading} content="What’s clients say about us" />
         </Box>
         <GlideCarousel
@@ -108,7 +108,7 @@ const TestimonialSection = ({
             {TESTIMONIALS.map((slideItem, index) => (
               <GlideSlide key={`testimonial-slide-${index}`}>
                 <TestimonialItem className="testimonial_item">
-                  <Text content={slideItem.review} {...reviewStyle} />
+                  {/* <Text content={slideItem.review} {...reviewStyle} /> */}
                   <Box {...TestimonialMeta}>
                     <ImageWrapper>
                       <Image

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import BannerBG from '../../../assets/image/hosting/banner-bg-d.jpg';
 
 const BannerWrapper = styled.section`
-  padding-top: 210px;
+  padding-top: 0;
   padding-bottom: 160px;
   background-image: linear-gradient(
       to bottom,

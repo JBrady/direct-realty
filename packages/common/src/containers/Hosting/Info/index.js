@@ -5,7 +5,6 @@ import Fade from 'react-reveal/Fade';
 import Box from 'reusecore/src/elements/Box';
 import Text from 'reusecore/src/elements/Text';
 import Heading from 'reusecore/src/elements/Heading';
-import Button from 'reusecore/src/elements/Button';
 import Card from 'reusecore/src/elements/Card';
 import Image from 'reusecore/src/elements/Image';
 import Container from '../../../components/UI/Container';
@@ -29,6 +28,7 @@ const InfoSection = ({
 }) => {
   return (
     <Box {...sectionWrapper}>
+      {/* Section 1 */}
       <Container>
         <Box {...row}>
           <Box {...col} {...textArea}>
@@ -36,15 +36,18 @@ const InfoSection = ({
               <Heading {...title} content="Services For Sellers" />
               <Text
                 {...description}
-                content="Our team have consistently achieved higher than market average of list to sale price. This means more profit for our sellers."
+                content="Our team have consistently achieved higher than market average of list to sale price. 
+                This means more profit for our sellers."
               />
-              <Box>
-                <Link href="#">
-                  <a>
-                    <Button {...button} title="HOW IT WORKS" />
-                  </a>
-                </Link>
-              </Box>
+              <Text />
+              <Text
+                {...description}
+                content="We first educate our clients, by clearly laying out our step by step process for success, 
+                then customizing a specific strategy tailored to fulfill their goals and exceed their satisfaction. 
+                Together, our team’s strategies and tireless work ethic allow them to get the most out of every transaction. 
+                The amazing results will speak for themselves."
+              />
+              <Text />
             </Fade>
           </Box>
         </Box>
@@ -87,7 +90,7 @@ InfoSection.propTypes = {
 InfoSection.defaultProps = {
   sectionWrapper: {
     as: 'section',
-    pt: ['0px', '0px', '0px', '0px', '80px'],
+    pt: ['0', '0', '0', '0', '0'],
     pb: ['60px', '80px', '40px', '80px', '80px'],
     id: 'info_section',
   },
