@@ -170,7 +170,7 @@ const data = {
       name: 'Kathleen Gonzalez',
       thumbnail_url: Member1,
       ca_dre_number: 'CA DRE #00928789',
-      designation: 'Broker',
+      designation: 'Owner/Broker',
       specialties:
         'Buyer’s Agent, Listing Agent, Commercial Properties, Landlord',
       bio:
@@ -189,10 +189,9 @@ const data = {
       oh-so-current understanding of the market her clients have come to expect.',
 
       social_links: [
-        'flaticon-facebook-logo',
-        'flaticon-twitter-logo-silhouette',
-        'flaticon-instagram',
-        // "flaticon-dribble-logo"
+        // "flaticon-twitter-logo-silhouette",
+        // "flaticon-facebook-logo",
+        // "flaticon-instagram"
       ],
     },
     {
@@ -210,10 +209,9 @@ const data = {
         'Joe is committed to satisfying your real estate needs through personalized service that is sensitive to the complex process of buying or selling property. His team focuses on taking the pressure off of you so you can make the best decisions for you and your family.',
 
       social_links: [
-        'flaticon-twitter-logo-silhouette',
-        'flaticon-instagram',
+        // "flaticon-twitter-logo-silhouette",
         'flaticon-facebook-logo',
-        // "flaticon-dribble-logo"
+        'flaticon-instagram',
       ],
     },
     {
@@ -233,10 +231,9 @@ const data = {
         'During the market down turn, she specialized in short sales which was an opportunity to exercise her negotiation skills.  Described by her clients as an intuitive negotiator and a consistent and effective communicator, Marcella advocates tirelessly on behalf of her clients. She does not work to meet her client’s expectations but to exceed them.',
 
       social_links: [
-        // "flaticon-dribble-logo",
-        'flaticon-twitter-logo-silhouette',
-        'flaticon-instagram',
+        // "flaticon-twitter-logo-silhouette",
         'flaticon-facebook-logo',
+        // "flaticon-instagram"
       ],
     },
   ],
