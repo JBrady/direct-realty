@@ -27,7 +27,10 @@ export default () => {
             Direct Realty | You deserve the best, expect the best, now
             experience the best
           </title>
-          <meta name="Description" content="React next landing page" />
+          <meta
+            name="Description"
+            content="Our team focuses on taking the pressure off of you so you can make the best decisions for you and your family. We are there for you 24/7 – Call or email us anytime!"
+          />
           <meta name="theme-color" content="#eb4d4b" />
           <link
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900|Open+Sans:400,400i,600,700"
