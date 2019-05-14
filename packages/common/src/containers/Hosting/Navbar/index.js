@@ -41,11 +41,11 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
               menuItems={MENU_ITEMS}
               offset={-70}
             />
-            {/* <Link href="#">
+            <Link href="mailto:joe@directrealty.net">
               <a className="navbar_button">
                 <Button {...button} title="CONTACT US" />
               </a>
-            </Link> */}
+            </Link>
             <Drawer
               width="420px"
               placement="right"
@@ -59,7 +59,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
                 drawerClose={true}
                 offset={-100}
               />
-              <Link href="#">
+              <Link href="mailto:joe@directrealty.net">
                 <a className="navbar_drawer_button">
                   <Button {...button} title="CONTACT US" />
                 </a>

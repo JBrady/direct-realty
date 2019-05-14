@@ -64,11 +64,11 @@ const TeamSection = ({
                     <Text content={member.bio3} {...bio3} />
                     <SocialLinks className="socialLinks">
                       {member.social_profile.map((profile, index) => (
-                        <Link key={`profile_key_${index}`}>
+                        <span key={`profile_key_${index}`}>
                           <a href={profile.link} target="_blank">
                             <i className={profile.icon} />
                           </a>
-                        </Link>
+                        </span>
                       ))}
                     </SocialLinks>
                   </Fragment>
