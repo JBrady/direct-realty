@@ -188,11 +188,7 @@ const data = {
         'As an full time Realtor, Kathleen understands that staying active in this market is the only way to support that \
       oh-so-current understanding of the market her clients have come to expect.',
 
-      social_links: [
-        // "flaticon-twitter-logo-silhouette",
-        // "flaticon-facebook-logo",
-        // "flaticon-instagram"
-      ],
+      social_profile: [],
     },
     {
       id: 2,
@@ -208,10 +204,17 @@ const data = {
       bio3:
         'Joe is committed to satisfying your real estate needs through personalized service that is sensitive to the complex process of buying or selling property. His team focuses on taking the pressure off of you so you can make the best decisions for you and your family.',
 
-      social_links: [
-        // "flaticon-twitter-logo-silhouette",
-        'flaticon-facebook-logo',
-        'flaticon-instagram',
+      social_profile: [
+        {
+          id: 1,
+          icon: 'flaticon-facebook-logo',
+          link: 'https://www.facebook.com/EgoTripIII',
+        },
+        {
+          id: 2,
+          icon: 'flaticon-instagram',
+          link: 'https://www.instagram.com/joeysellssandiego/',
+        },
       ],
     },
     {
@@ -230,10 +233,12 @@ const data = {
       bio3:
         'During the market down turn, she specialized in short sales which was an opportunity to exercise her negotiation skills.  Described by her clients as an intuitive negotiator and a consistent and effective communicator, Marcella advocates tirelessly on behalf of her clients. She does not work to meet her client’s expectations but to exceed them.',
 
-      social_links: [
-        // "flaticon-twitter-logo-silhouette",
-        'flaticon-facebook-logo',
-        // "flaticon-instagram"
+      social_profile: [
+        {
+          id: 1,
+          icon: 'flaticon-facebook-logo',
+          link: 'https://www.facebook.com/marcie.gonzalezprado',
+        },
       ],
     },
   ],
@@ -417,33 +422,6 @@ const data = {
           text: 'Responsible supply chain',
         },
       ],
-    },
-  ],
-  social_profile: [
-    {
-      id: 1,
-      icon: 'flaticon-facebook-logo',
-      link: '#1',
-    },
-    {
-      id: 2,
-      icon: 'flaticon-twitter-logo-silhouette',
-      link: '#2',
-    },
-    {
-      id: 3,
-      icon: 'flaticon-instagram',
-      link: '#3',
-    },
-    {
-      id: 4,
-      icon: 'flaticon-tumblr-logo',
-      link: '#4',
-    },
-    {
-      id: 5,
-      icon: 'flaticon-dribble-logo',
-      link: '#5',
     },
   ],
 };

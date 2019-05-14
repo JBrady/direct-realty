@@ -19,7 +19,8 @@ const TeamSectionWrapper = styled.section`
 
 const SocialLinks = styled.div`
   margin-top: 12px;
-  > button {
+  > button,
+  a {
     margin: 3px;
     cursor: pointer;
     width: 30px;

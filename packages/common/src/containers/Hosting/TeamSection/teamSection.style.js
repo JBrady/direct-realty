@@ -46,7 +46,8 @@ const TeamSectionWrapper = styled.section`
 `;
 
 const SocialLinks = styled.div`
-  > button {
+  > button,
+  a i {
     margin: 3px;
     cursor: pointer;
     width: 30px;
@@ -57,6 +58,8 @@ const SocialLinks = styled.div`
     border: 1px solid rgba(15, 33, 55, 0.26);
     color: #0f2137;
     transition: all 0.2s ease;
+    display: inline-block;
+    font-size: 13.3333px;
     &:hover,
     &:focus {
       outline: none;
