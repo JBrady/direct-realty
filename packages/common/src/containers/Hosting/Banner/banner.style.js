@@ -1,10 +1,15 @@
-import styled from 'styled-components';
-import BannerBG from '../../../assets/image/hosting/banner-bg.jpg';
+import styled from "styled-components";
+import BannerBG from "../../../assets/image/hosting/banner-bg-d.jpg";
 
 const BannerWrapper = styled.section`
-  padding-top: 210px;
+  padding-top: 0;
   padding-bottom: 160px;
-  background-image: url(${BannerBG});
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url(${BannerBG});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -108,7 +113,7 @@ export const SearchWrapper = styled.div`
         border-right: 0;
         border-radius: 0;
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           width: 1px;
           height: 55%;
@@ -174,7 +179,7 @@ export const DiscountWrapper = styled.div`
 `;
 
 export const DiscountLabel = styled.div`
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   display: inline-block;
   border-radius: 4em;
   border: 1px solid #f6f6f7;

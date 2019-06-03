@@ -1,15 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Link from 'next/link';
-import Fade from 'react-reveal/Fade';
-import Box from 'reusecore/src/elements/Box';
-import Text from 'reusecore/src/elements/Text';
-import Heading from 'reusecore/src/elements/Heading';
-import Button from 'reusecore/src/elements/Button';
-import Image from 'reusecore/src/elements/Image';
-import Container from '../../../components/UI/Container';
+import React from "react";
+import PropTypes from "prop-types";
+import Link from "next/link";
+import Fade from "react-reveal/Fade";
+import Box from "reusecore/src/elements/Box";
+import Text from "reusecore/src/elements/Text";
+import Heading from "reusecore/src/elements/Heading";
+import Button from "reusecore/src/elements/Button";
+import Image from "reusecore/src/elements/Image";
+import Container from "../../../components/UI/Container";
 
-import Domains from '../../../assets/image/hosting/circle.png';
+import Domains from "../../../assets/image/hosting/circle.jpg";
 
 const DomainSection = ({
   sectionWrapper,
@@ -19,7 +19,7 @@ const DomainSection = ({
   description,
   button,
   textArea,
-  imageArea,
+  imageArea
 }) => {
   return (
     <Box {...sectionWrapper}>
@@ -30,21 +30,30 @@ const DomainSection = ({
           </Box>
           <Box {...col} {...textArea}>
             <Fade bottom cascade>
-              <Heading
-                {...title}
-                content="Available domain extension with your custom name"
+              <Heading {...title} content="Services For Buyers" />
+              <Text
+                {...description}
+                content="These days anyone can use online resources to view many different aspects of the real estate market, but they need a guiding force more than ever to achieve this level of success."
               />
               <Text
                 {...description}
-                content="You can check the domain avaibility by our domain tool and choose your desired domain without any hagitation if available."
+                content="Our team tackles the toughest challenges by assessing, integrating and thinking through information. Often finding unique solutions before they become problems."
               />
-              <Box>
+              <Text
+                {...description}
+                content="Most of all, Kathleen and her team have an uncanny ability to understand the needs and wants of their clients, and develops a custom strategy specific to their unique situation – Conclusively translating their goals into tangible success, while making every transaction lighthearted from start to finish."
+              />
+              <Text
+                {...description}
+                content="With Direct Realty, your buying power has never been stronger. Success is just around the corner."
+              />
+              {/* <Box>
                 <Link href="#">
                   <a>
                     <Button {...button} title="EXPLORE MORE" />
                   </a>
                 </Link>
-              </Box>
+              </Box> */}
             </Fade>
           </Box>
         </Box>
@@ -61,59 +70,60 @@ DomainSection.propTypes = {
   description: PropTypes.object,
   button: PropTypes.object,
   textArea: PropTypes.object,
-  imageArea: PropTypes.object,
+  imageArea: PropTypes.object
 };
 
 DomainSection.defaultProps = {
   sectionWrapper: {
-    as: 'section',
-    pt: ['0', '0', '40px', '80px'],
-    pb: ['40px', '40px', '80px', '80px'],
+    as: "section",
+    pt: ["0", "0", "40px", "80px"],
+    pb: ["40px", "40px", "80px", "80px"],
+    id: "domain_section"
   },
   row: {
     flexBox: true,
-    flexWrap: 'wrap',
-    ml: '-15px',
-    mr: '-15px',
-    alignItems: 'center',
+    flexWrap: "wrap",
+    ml: "-15px",
+    mr: "-15px",
+    alignItems: "center"
   },
   imageAreaRow: {
-    flexDirection: 'row-reverse',
+    flexDirection: "row-reverse"
   },
   col: {
-    pr: '15px',
-    pl: '15px',
+    pr: "15px",
+    pl: "15px"
   },
   textArea: {
-    width: ['100%', '100%', '55%', '50%', '42%'],
+    width: ["100%", "100%", "55%", "50%", "42%"]
   },
   imageArea: {
-    width: ['100%', '100%', '45%', '50%', '58%'],
-    mb: ['40px', '40px', '0', '0', '0'],
+    width: ["100%", "100%", "45%", "50%", "58%"],
+    mb: ["40px", "40px", "0", "0", "0"]
   },
   title: {
-    fontSize: ['26px', '38px', '38px', '48px', '48px'],
-    fontWeight: '300',
-    color: '#0f2137',
-    letterSpacing: '-0.025em',
-    mb: '20px',
+    fontSize: ["26px", "38px", "38px", "48px", "48px"],
+    fontWeight: "300",
+    color: "#0f2137",
+    letterSpacing: "-0.025em",
+    mb: "20px"
   },
   description: {
-    fontSize: '16px',
-    color: '#343d48cc',
-    lineHeight: '1.75',
-    mb: '33px',
+    fontSize: "16px",
+    color: "#343d48cc",
+    lineHeight: "1.75",
+    mb: "33px"
   },
   button: {
-    type: 'button',
-    fontSize: '14px',
-    fontWeight: '600',
-    color: '#fff',
-    borderRadius: '4px',
-    pl: '22px',
-    pr: '22px',
-    colors: 'primaryWithBg',
-  },
+    type: "button",
+    fontSize: "14px",
+    fontWeight: "600",
+    color: "#fff",
+    borderRadius: "4px",
+    pl: "22px",
+    pr: "22px",
+    colors: "primaryWithBg"
+  }
 };
 
 export default DomainSection;

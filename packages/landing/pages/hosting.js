@@ -1,36 +1,36 @@
-import React from 'react';
-import Head from 'next/head';
-import { ThemeProvider } from 'styled-components';
-import Sticky from 'react-stickynode';
-import { hostingTheme } from 'common/src/theme/hosting';
+import React from "react";
+import Head from "next/head";
+import { ThemeProvider } from "styled-components";
+import Sticky from "react-stickynode";
+import { hostingTheme } from "common/src/theme/hosting";
 import {
   GlobalStyle,
-  ContentWrapper,
-} from 'common/src/containers/Hosting/hosting.style';
-import { ResetCSS } from 'common/src/assets/css/style';
-import Navbar from 'common/src/containers/Hosting/Navbar';
-import FeatureSection from 'common/src/containers/Hosting/Features';
-import InfoSection from 'common/src/containers/Hosting/Info';
-import DomainSection from 'common/src/containers/Hosting/Domain';
-import PaymentSection from 'common/src/containers/Hosting/Payment';
-import GuaranteeSection from 'common/src/containers/Hosting/Guarantee';
-import ServicesSection from 'common/src/containers/Hosting/Services';
-import BannerSection from 'common/src/containers/Hosting/Banner';
-import PricingSection from 'common/src/containers/Hosting/Pricing';
-import TestimonialSection from 'common/src/containers/Hosting/Testimonials';
-import ContactSection from 'common/src/containers/Hosting/Contact';
-import Footer from 'common/src/containers/Hosting/Footer';
-import { DrawerProvider } from 'common/src/contexts/DrawerContext';
-import { ParallaxProvider } from 'react-scroll-parallax';
-import FaqSection from 'common/src/containers/Hosting/Faq';
+  ContentWrapper
+} from "common/src/containers/Hosting/hosting.style";
+import { ResetCSS } from "common/src/assets/css/style";
+import Navbar from "common/src/containers/Hosting/Navbar";
+import InfoSection from "common/src/containers/Hosting/Info";
+import DomainSection from "common/src/containers/Hosting/Domain";
+import BannerSection from "common/src/containers/Hosting/Banner";
+import TestimonialSection from "common/src/containers/Hosting/Testimonials";
+import TeamSection from "common/src/containers/Hosting/TeamSection";
+import Footer from "common/src/containers/Hosting/Footer";
+import { DrawerProvider } from "common/src/contexts/DrawerContext";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 export default () => {
   return (
     <ThemeProvider theme={hostingTheme}>
       <ParallaxProvider>
         <Head>
-          <title>Hosting | A react next landing page</title>
-          <meta name="Description" content="React next landing page" />
+          <title>
+            Direct Realty | You deserve the best, expect the best, now
+            experience the best
+          </title>
+          <meta
+            name="Description"
+            content="Our team focuses on taking the pressure off of you so you can make the best decisions for you and your family. We are there for you 24/7 – Call or email us anytime!"
+          />
           <meta name="theme-color" content="#eb4d4b" />
           <link
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900|Open+Sans:400,400i,600,700"
@@ -42,23 +42,19 @@ export default () => {
         <GlobalStyle />
 
         <ContentWrapper>
-          <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
+          <Sticky top={0} innerZ={9999} className="sticky-nav-active">
             <DrawerProvider>
               <Navbar />
             </DrawerProvider>
           </Sticky>
 
           <BannerSection />
-          <FeatureSection />
+          <TeamSection />
+
           <InfoSection />
-          <PricingSection />
           <DomainSection />
-          <ServicesSection />
-          <PaymentSection />
+
           <TestimonialSection />
-          <GuaranteeSection />
-          <FaqSection />
-          <ContactSection />
           <Footer />
         </ContentWrapper>
       </ParallaxProvider>

@@ -1,10 +1,10 @@
-import styled, { createGlobalStyle } from 'styled-components';
-import { themeGet } from 'styled-system';
-import FeatureBlock from '../../components/FeatureBlock';
+import styled, { createGlobalStyle } from "styled-components";
+import { themeGet } from "styled-system";
+import FeatureBlock from "../../components/FeatureBlock";
 
 export const GlobalStyle = createGlobalStyle`
   body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
   h1,
@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
   section {
@@ -110,10 +110,10 @@ export const GlobalStyle = createGlobalStyle`
 
   /* Modal default style */
   button.modalCloseBtn {
-    color: ${themeGet('colors.white', '#ffffff')} !important;
+    color: ${themeGet("colors.white", "#ffffff")} !important;
 
     &.alt {
-      background-color: ${themeGet('colors.primary', '#5268db')} !important;
+      background-color: ${themeGet("colors.primary", "#5268db")} !important;
       box-shadow: 0px 9px 20px -5px rgba(82, 104, 219, 0.57) !important;
     }
   }
@@ -121,69 +121,85 @@ export const GlobalStyle = createGlobalStyle`
 
 export const ContentWrapper = styled.div`
   overflow: hidden;
-  .sticky-nav-active {
+  .sticky-outer-wrapper {
+    /* .hosting_navbar {
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        180deg,
+        rgba(70, 70, 70) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    } */
+    &.sticky-nav-active {
+      .hosting_navbar {
+        background: #fff;
+        box-shadow: 0px 3px 8px 0px rgba(43, 83, 135, 0.08);
+        padding: 15px 0;
+        .main_menu {
+          li {
+            a {
+              color: #343d48;
+            }
+          }
+        }
+      }
+    }
+
     .hosting_navbar {
-      background: #fff;
-      box-shadow: 0px 3px 8px 0px rgba(43, 83, 135, 0.08);
-      padding: 15px 0;
-    }
-  }
-
-  .hosting_navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: 0.35s ease-in-out;
-    padding: 30px 0;
-    .main_menu {
-      margin-right: 40px;
-      li {
-        display: inline-block;
-        padding-left: 13px;
-        padding-right: 13px;
-        &:first-child {
-          padding-left: 0;
-        }
-        &:last-child {
-          padding-right: 0;
-        }
-        &.is-current {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transition: 0.35s ease-in-out;
+      padding: 30px 0;
+      .main_menu {
+        margin-right: 40px;
+        li {
+          display: inline-block;
+          padding-left: 13px;
+          padding-right: 13px;
+          &:first-child {
+            padding-left: 0;
+          }
+          &:last-child {
+            padding-right: 0;
+          }
+          &.is-current {
+            a {
+              color: #eb4d4b;
+            }
+          }
           a {
-            color: #eb4d4b;
+            padding: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            transition: 0.15s ease-in-out;
+            &:hover {
+              color: #eb4d4b;
+            }
           }
         }
-        a {
-          padding: 5px;
-          font-size: 16px;
-          font-weight: 400;
-          color: #343d48;
-          transition: 0.15s ease-in-out;
-          &:hover {
-            color: #eb4d4b;
-          }
+        @media (max-width: 990px) {
+          display: none;
         }
       }
-      @media (max-width: 990px) {
-        display: none;
+      .navbar_button {
+        @media (max-width: 990px) {
+          display: none;
+        }
       }
-    }
-    .navbar_button {
-      @media (max-width: 990px) {
-        display: none;
-      }
-    }
-    .reusecore-drawer__handler {
-      @media (min-width: 991px) {
-        display: none !important;
-      }
-      .hamburgMenu__bar {
-        > span {
+      .reusecore-drawer__handler {
+        @media (min-width: 991px) {
+          display: none !important;
+        }
+        .hamburgMenu__bar {
+          > span {
+          }
         }
       }
     }
   }
-
   .info-sec-container {
     @media (min-width: 768px) {
       position: absolute;
@@ -247,7 +263,7 @@ export const ContentWrapper = styled.div`
         }
 
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           width: 85%;
           height: 0;
@@ -294,7 +310,7 @@ export const FeatureItem = styled(FeatureBlock)`
   }
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;

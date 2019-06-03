@@ -1,19 +1,19 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Box from 'reusecore/src/elements/Box';
-import Text from 'reusecore/src/elements/Text';
-import Heading from 'reusecore/src/elements/Heading';
-import Button from 'reusecore/src/elements/Button';
-import Image from 'reusecore/src/elements/Image';
-import Container from '../../../components/UI/Container';
-import GlideCarousel from '../../../components/GlideCarousel';
-import GlideSlide from '../../../components/GlideCarousel/glideSlide';
+import React from "react";
+import PropTypes from "prop-types";
+import Box from "reusecore/src/elements/Box";
+import Text from "reusecore/src/elements/Text";
+import Heading from "reusecore/src/elements/Heading";
+import Button from "reusecore/src/elements/Button";
+import Image from "reusecore/src/elements/Image";
+import Container from "../../../components/UI/Container";
+import GlideCarousel from "../../../components/GlideCarousel";
+import GlideSlide from "../../../components/GlideCarousel/glideSlide";
 import TestimonialSecWrapper, {
   ImageWrapper,
-  TestimonialItem,
-} from './testimonials.style';
+  TestimonialItem
+} from "./testimonials.style";
 
-import { TESTIMONIALS } from '../../../data/Hosting/data';
+import { TESTIMONIALS } from "../../../data/Hosting/data";
 
 const TestimonialSection = ({
   secTitleWrapper,
@@ -23,70 +23,70 @@ const TestimonialSection = ({
   TestimonialMeta,
   nameStyle,
   designationStyle,
-  arrowStyle,
+  arrowStyle
 }) => {
   //Carousel Options
   const carouselOptions = {
-    type: 'carousel',
+    type: "carousel",
     autoplay: 4000,
     perView: 2,
     gap: 30,
     animationDuration: 800,
     peek: {
       before: 390,
-      after: 390,
+      after: 390
     },
     breakpoints: {
       1800: {
         perView: 2,
         peek: {
           before: 220,
-          after: 220,
-        },
+          after: 220
+        }
       },
       1400: {
         perView: 2,
         peek: {
           before: 160,
-          after: 160,
-        },
+          after: 160
+        }
       },
       1200: {
         perView: 2,
         peek: {
           before: 100,
-          after: 100,
-        },
+          after: 100
+        }
       },
       990: {
         perView: 2,
         peek: {
           before: 100,
-          after: 100,
-        },
+          after: 100
+        }
       },
       800: {
         perView: 1,
         peek: {
           before: 120,
-          after: 120,
-        },
+          after: 120
+        }
       },
       575: {
         perView: 1,
         peek: {
           before: 0,
-          after: 0,
-        },
-      },
-    },
+          after: 0
+        }
+      }
+    }
   };
 
   return (
     <TestimonialSecWrapper id="testimonial_section">
       <Container fullWidth noGutter>
         <Box {...secTitleWrapper}>
-          <Text {...secText} content="TESTIMONIALS " />
+          <Text {...secText} content="REVIEWS " />
           <Heading {...secHeading} content="What’s clients say about us" />
         </Box>
         <GlideCarousel
@@ -108,7 +108,7 @@ const TestimonialSection = ({
             {TESTIMONIALS.map((slideItem, index) => (
               <GlideSlide key={`testimonial-slide-${index}`}>
                 <TestimonialItem className="testimonial_item">
-                  <Text content={slideItem.review} {...reviewStyle} />
+                  {/* <Text content={slideItem.review} {...reviewStyle} /> */}
                   <Box {...TestimonialMeta}>
                     <ImageWrapper>
                       <Image
@@ -142,56 +142,56 @@ TestimonialSection.propTypes = {
   TestimonialMeta: PropTypes.object,
   nameStyle: PropTypes.object,
   designationStyle: PropTypes.object,
-  arrowStyle: PropTypes.object,
+  arrowStyle: PropTypes.object
 };
 
 TestimonialSection.defaultProps = {
   secTitleWrapper: {
-    mb: ['40px', '40px', '50px', '75px'],
+    mb: ["40px", "40px", "50px", "75px"]
   },
   secText: {
-    as: 'span',
-    display: 'block',
-    textAlign: 'center',
-    fontSize: '14px',
-    letterSpacing: '0.15em',
-    fontWeight: '700',
-    color: '#eb4d4b',
-    mb: '10px',
+    as: "span",
+    display: "block",
+    textAlign: "center",
+    fontSize: "14px",
+    letterSpacing: "0.15em",
+    fontWeight: "700",
+    color: "#eb4d4b",
+    mb: "10px"
   },
   secHeading: {
-    textAlign: 'center',
-    fontSize: ['20px', '24px'],
-    fontWeight: '400',
-    color: 'headingColor',
-    letterSpacing: '-0.025em',
-    mb: '0',
+    textAlign: "center",
+    fontSize: ["20px", "24px"],
+    fontWeight: "400",
+    color: "headingColor",
+    letterSpacing: "-0.025em",
+    mb: "0"
   },
   reviewStyle: {
-    fontSize: ['16px', '16px', '17px', '17px', '19px'],
-    fontWeight: '300',
-    color: '#343d48',
-    lineHeight: '1.74',
-    mb: ['30px', '30px', '30px', '40px', '55px'],
+    fontSize: ["16px", "16px", "17px", "17px", "19px"],
+    fontWeight: "300",
+    color: "#343d48",
+    lineHeight: "1.74",
+    mb: ["30px", "30px", "30px", "40px", "55px"]
   },
   TestimonialMeta: {
     flexBox: true,
-    alignItems: 'center',
+    alignItems: "center"
   },
   nameStyle: {
-    as: 'h3',
-    fontSize: '16px',
-    fontWeight: '500',
-    color: '#0f2137',
-    letterSpacing: '-0.025em',
-    mb: '8px',
+    as: "h3",
+    fontSize: "16px",
+    fontWeight: "500",
+    color: "#0f2137",
+    letterSpacing: "-0.025em",
+    mb: "8px"
   },
   designationStyle: {
-    fontSize: '14px',
-    fontWeight: '400',
-    color: '#6f7a87',
-    mb: '0',
-  },
+    fontSize: "14px",
+    fontWeight: "400",
+    color: "#6f7a87",
+    mb: "0"
+  }
 };
 
 export default TestimonialSection;

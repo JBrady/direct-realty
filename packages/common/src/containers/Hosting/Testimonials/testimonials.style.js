@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const TestimonialSecWrapper = styled.section`
-  padding: 80px 0;
+  padding: 0;
   @media (max-width: 575px) {
     padding: 60px 0;
   }
@@ -80,7 +80,7 @@ const TestimonialSecWrapper = styled.section`
 
 export const TestimonialItem = styled.div`
   border: 1px solid #f2f4f7;
-  padding: 40px;
+  /* padding: 40px; */
   border-radius: 5px;
   background-color: #fff;
   transition: 0.425s ease;
@@ -90,19 +90,19 @@ export const TestimonialItem = styled.div`
   }
 
   @media (max-width: 1300px) {
-    padding: 30px;
+    /* padding: 30px; */
   }
 `;
 
 export const ImageWrapper = styled.div`
-  width: 50px;
+  /* width: 50px;
   height: 50px;
-  flex-basis: 50px;
+  flex-basis: 50px; */
   display: block;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   overflow: hidden;
   box-shadow: 0px 6px 30px 0px rgba(39, 79, 117, 0.2);
-  margin-right: 15px;
+  /* margin-right: 15px; */
   img {
     width: 100%;
     height: auto;

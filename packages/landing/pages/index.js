@@ -1,67 +1,64 @@
-import React, { Fragment } from 'react';
-import Head from 'next/head';
-import Sticky from 'react-stickynode';
-import { ThemeProvider } from 'styled-components';
-import { agencyTheme } from 'common/src/theme/agency';
-import { ResetCSS } from 'common/src/assets/css/style';
+import React from "react";
+import Head from "next/head";
+import { ThemeProvider } from "styled-components";
+import Sticky from "react-stickynode";
+import { hostingTheme } from "common/src/theme/hosting";
 import {
   GlobalStyle,
-  AgencyWrapper,
-} from 'common/src/containers/Agency/agency.style';
-import Navbar from 'common/src/containers/Agency/Navbar';
-import BannerSection from 'common/src/containers/Agency/BannerSection';
-import FeatureSection from 'common/src/containers/Agency/FeatureSection';
-import AboutUsSection from 'common/src/containers/Agency/AboutUsSection';
-import WorkHistory from 'common/src/containers/Agency/WorkHistory';
-import BlogSection from 'common/src/containers/Agency/BlogSection';
-import TestimonialSection from 'common/src/containers/Agency/TestimonialSection';
-import TeamSection from 'common/src/containers/Agency/TeamSection';
-import VideoSection from 'common/src/containers/Agency/VideoSection';
-import NewsletterSection from 'common/src/containers/Agency/NewsletterSection';
-import QualitySection from 'common/src/containers/Agency/QualitySection';
-import Footer from 'common/src/containers/Agency/Footer';
-import { DrawerProvider } from 'common/src/contexts/DrawerContext';
-import FaqSection from 'common/src/containers/Agency/FaqSection';
+  ContentWrapper
+} from "common/src/containers/Hosting/hosting.style";
+import { ResetCSS } from "common/src/assets/css/style";
+import Navbar from "common/src/containers/Hosting/Navbar";
+import InfoSection from "common/src/containers/Hosting/Info";
+import DomainSection from "common/src/containers/Hosting/Domain";
+import BannerSection from "common/src/containers/Hosting/Banner";
+import TestimonialSection from "common/src/containers/Hosting/Testimonials";
+import TeamSection from "common/src/containers/Hosting/TeamSection";
+import Footer from "common/src/containers/Hosting/Footer";
+import { DrawerProvider } from "common/src/contexts/DrawerContext";
+import { ParallaxProvider } from "react-scroll-parallax";
+
 export default () => {
   return (
-    <ThemeProvider theme={agencyTheme}>
-      <Fragment>
-        {/* Start agency head section */}
+    <ThemeProvider theme={hostingTheme}>
+      <ParallaxProvider>
         <Head>
-          <title>Agency | A react next landing page</title>
-          <meta name="theme-color" content="#10ac84" />
-          <meta name="Description" content="React next landing page" />
-          {/* Load google fonts */}
+          <title>
+            Direct Realty | You deserve the best, expect the best, now
+            experience the best
+          </title>
+          <meta
+            name="Description"
+            content="Our team focuses on taking the pressure off of you so you can make the best decisions for you and your family. We are there for you 24/7 – Call or email us anytime!"
+          />
+          <meta name="theme-color" content="#eb4d4b" />
           <link
-            href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900|Open+Sans:400,400i,600,700"
             rel="stylesheet"
           />
         </Head>
+
         <ResetCSS />
         <GlobalStyle />
-        {/* End of agency head section */}
-        {/* Start agency wrapper section */}
-        <AgencyWrapper>
-          <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
+
+        <ContentWrapper>
+          <Sticky top={0} innerZ={9999} className="sticky-nav-active">
             <DrawerProvider>
               <Navbar />
             </DrawerProvider>
           </Sticky>
+
           <BannerSection />
-          <FeatureSection />
-          <AboutUsSection />
-          <WorkHistory />
-          <BlogSection />
-          <QualitySection />
-          <VideoSection />
-          <TestimonialSection />
           <TeamSection />
-          <FaqSection />
-          <NewsletterSection />
+
+          <InfoSection />
+          <DomainSection />
+
+          <TestimonialSection />
+
           <Footer />
-        </AgencyWrapper>
-        {/* End of agency wrapper section */}
-      </Fragment>
+        </ContentWrapper>
+      </ParallaxProvider>
     </ThemeProvider>
   );
 };

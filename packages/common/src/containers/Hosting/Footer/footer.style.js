@@ -1,14 +1,15 @@
-import styled from 'styled-components';
-import FooterImage from '../../../assets/image/hosting/footer-bg.png';
+import styled from "styled-components";
+import FooterImage from "../../../assets/image/hosting/footer-bg.png";
 
 const FooterWrapper = styled.footer`
   position: relative;
-  background-color: #f9fbfd;
+  background-color: #ececec4a;
   overflow: hidden;
   @media (min-width: 576px) {
-    padding-top: 130px;
+    padding-top: 0;
+    border-top: 1px solid #e2e2e2;
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       width: 104%;
       padding-bottom: 104%;
@@ -30,6 +31,7 @@ const FooterWrapper = styled.footer`
     padding-top: 80px;
     padding-bottom: 80px;
     position: relative;
+    text-align: center;
     @media (min-width: 576px) {
       background-image: url(${FooterImage});
     }
@@ -39,6 +41,10 @@ const FooterWrapper = styled.footer`
     @media (max-width: 767px) {
       padding-bottom: 0px;
     }
+  }
+
+  .finePrint {
+    text-align: left;
   }
 `;
 
